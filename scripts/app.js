@@ -183,7 +183,7 @@
    */
   app.getForecast = function (key, label) {
     var statement = 'select * from weather.forecast where woeid=' + key;
-    var url = 'https://weather-ydn-yql.media.yahoo.com/forecastrss/v1/public/yql?format=json&q=' +
+    var url = 'https://query.yahooapis.com/v1/public/yql?format=json&q=' +
       statement;
     // TODO add cache logic here
     if ('caches' in window) {
